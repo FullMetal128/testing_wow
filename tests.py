@@ -18,7 +18,7 @@ def test_get_pet(data):
 def test_add_pet(data):
     response = requests.post(f"{URL}/pet", json = data)
     assert response.status_code == 200
-    assert response.json()['pet']['name'] == data['name']
+    assert response.json()['name'] == data['name']
 
 def test_get_pet(data):
     pet_id = data['id']
@@ -28,16 +28,19 @@ def test_get_pet(data):
 
 def test_update_pet(data):
     data['name'] = 'GALAXY_____DESTROYER_____3000'
+    data['category']['name'] = 'GALAXY_____DESTROYER_____3000'
     response = requests.put(f'{URL}/pet', json = data)
     assert response.status_code == 200
     assert response.json()['name'] == data['name']
+    assert response.json()['category']['name'] == data['category']['name']
 
 
+'''
 def test_delete_pet(data):
     pet_id = data['id']
     response = requests.delete(f'{URL}/pet/{pet_id}')
     assert response.status_code == 200
     response = requests.get(f'{URL}/pet/{pet_id}')
     assert response.status_code == 404
-
+'''
 

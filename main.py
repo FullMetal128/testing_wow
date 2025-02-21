@@ -21,7 +21,7 @@ def add_pet(name):
             "id": 228,
             "name": name
         },
-        "name": "doggie",
+        "name": name,
         "photoUrls": ["string"],
         "tags": [
             {
@@ -38,5 +38,7 @@ def get_pet(id):
     url = f"https://petstore.swagger.io/v2/pet/{id}"
     r = requests.get(url)
     return r.json()
+
+#add_pet('GOOOOD BOY')
 logging.basicConfig(level=logging.DEBUG)
 logging.info(get_pet(228))
