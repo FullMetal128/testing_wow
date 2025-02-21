@@ -1,7 +1,5 @@
-import requests
-
 from main import *
-import conftest
+
 URL = 'https://petstore.swagger.io/v2'
 
 def test_connect():

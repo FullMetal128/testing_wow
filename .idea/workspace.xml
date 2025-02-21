@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e2f79bc-7082-463d-a374-2377249b18a9" name="Changes" comment="YEEEEEAAAAAAAAAAAH">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1e2f79bc-7082-463d-a374-2377249b18a9" name="Changes" comment="YEEEEEAAAAAAAAAAAH&#10;GALAXYDESSSSSTROYER">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740070272943</updated>
       <workItem from="1740070274013" duration="719000" />
-      <workItem from="1740153169756" duration="1966000" />
+      <workItem from="1740153169756" duration="2436000" />
     </task>
     <task id="LOCAL-00001" summary="YEEEEEAAAAAAAAAAAH">
       <option name="closed" value="true" />
@@ -116,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740156132926</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="YEEEEEAAAAAAAAAAAH&#10;GALAXYDESSSSSTROYER">
+      <option name="closed" value="true" />
+      <created>1740156871472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740156871472</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,9 +132,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="YEEEEEAAAAAAAAAAAH" />
-    <option name="LAST_COMMIT_MESSAGE" value="YEEEEEAAAAAAAAAAAH" />
+    <MESSAGE value="YEEEEEAAAAAAAAAAAH&#10;GALAXYDESSSSSTROYER" />
+    <option name="LAST_COMMIT_MESSAGE" value="YEEEEEAAAAAAAAAAAH&#10;GALAXYDESSSSSTROYER" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/testing_wow$main.coverage" NAME="main Coverage Results" MODIFIED="1740156074546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testing_wow$main.coverage" NAME="main Coverage Results" MODIFIED="1740157250433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
