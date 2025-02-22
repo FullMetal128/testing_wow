@@ -1,6 +1,7 @@
 from main import *
 import const
 import conftest
+import logging
 URL = 'https://petstore.swagger.io/v2'
 '''
 def test_connect():
@@ -26,11 +27,14 @@ def test_get_pet(data):
     assert response.status_code == 200
     assert response.json()['id'] == pet_id
 '''
+
+
 def test_update_pet(create_pet):
     id = create_pet
-    response = requests.post(f'{URL}/pet/{id}', data= const.data)
+    response = requests.post(f'{URL}/pet/{id}', json= const.data)
     assert response.status_code == 200
     assert response.json()['name'] == const.data['name']
+
 
 
 
