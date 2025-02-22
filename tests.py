@@ -1,3 +1,4 @@
+from conftest import delete_pet
 from main import *
 import const
 import conftest
@@ -31,9 +32,15 @@ def test_get_pet(data):
 
 def test_update_pet(create_pet):
     id = create_pet
-    response = requests.post(f'{URL}/pet/{id}', json= const.data)
+
+    response0 = requests.get(f'{URL}/pet/{id}')
+    assert response0.status_code == 200
+    assert response0.json()['name'] == 'GOOOOD BOY1'
+    response = requests.post(f'{URL}/pet/{id}', data= const.data)
+    response2 = requests.get(f'{URL}/pet/{id}')
     assert response.status_code == 200
-    assert response.json()['name'] == const.data['name']
+    assert response2.status_code == 200
+    assert response2.json()['name'] == const.data['name']
 
 
 
