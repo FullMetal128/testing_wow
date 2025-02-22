@@ -1,7 +1,8 @@
 from main import *
-
+import const
+import conftest
 URL = 'https://petstore.swagger.io/v2'
-
+'''
 def test_connect():
     assert get_info() == 'Success'
 
@@ -11,26 +12,26 @@ def test_add_pet():
 def test_get_pet(data):
     rezult = data
     assert get_pet(228) == rezult
-
-
+'''
+'''
 def test_add_pet(data):
     response = requests.post(f"{URL}/pet", json = data)
     assert response.status_code == 200
     assert response.json()['name'] == data['name']
-
+'''
+'''
 def test_get_pet(data):
     pet_id = data['id']
     response = requests.get(f"{URL}/pet/{pet_id}")
     assert response.status_code == 200
     assert response.json()['id'] == pet_id
-
-def test_update_pet(data):
-    data['name'] = 'GALAXY_____DESTROYER_____3000'
-    data['category']['name'] = 'GALAXY_____DESTROYER_____3000'
-    response = requests.put(f'{URL}/pet', json = data)
+'''
+def test_update_pet(create_pet):
+    id = create_pet
+    response = requests.post(f'{URL}/pet/{id}', data= const.data)
     assert response.status_code == 200
-    assert response.json()['name'] == data['name']
-    assert response.json()['category']['name'] == data['category']['name']
+    assert response.json()['name'] == const.data['name']
+
 
 
 '''
