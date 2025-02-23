@@ -1,1 +1,6 @@
-data = {'id': 229, 'category': {'id': 229, 'name': 'GALAXY_DESTROYER228'}, 'name': 'GALAXY_DESTROYER228', 'photoUrls': ['string'], 'tags': [{'id': 229, 'name': 'GALAXY_DESTROYER228'}], 'status': 'available'}
+data = {'id': 666,
+        'category': {'id': 666, 'name': 'category'},
+        'name': 'GALAXY_DESTROYER666',
+        'photoUrls': ['string'],
+        'tags': [{'id': 666, 'name': 'tags'}],
+        'status': 'available'}

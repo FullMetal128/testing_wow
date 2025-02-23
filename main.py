@@ -41,4 +41,4 @@ def get_pet(id):
 
 #add_pet('GOOOOD BOY')
 logging.basicConfig(level=logging.DEBUG)
-logging.info(get_pet(229))
+logging.info(get_pet(666))
