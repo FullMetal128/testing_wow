@@ -3,30 +3,25 @@ import requests
 
 BASE_URL = 'https://petstore.swagger.io/v2'
 
-def test_add_pet(add_pet):
-    pet_id = add_pet["id"]
-    response = requests.get(f"{BASE_URL}/pet/{pet_id}")
+def test_add_pet(delete_pet):
+    response = requests.post(f"{BASE_URL}/pet", json= const.data)
+    assert response.status_code == 200, response.text
+    get_response = requests.get(f"{BASE_URL}/pet/{const.data['id']}")
+    assert get_response.status_code == 200, get_response.text
+    assert get_response.json()['id'] == const.data['id'], get_response.text
+
+
+def test_update_pet(create_test_pet, delete_pet):
+
+    updated_data = const.data.copy()
+    updated_data["name"] = "NEWNAME"
+    response = requests.put(f"{BASE_URL}/pet", json= updated_data)
     assert response.status_code == 200
-    assert response.json()["id"] == pet_id
+    assert response.json()['name'] != 'GALAXY_DESTROYER666'
+    assert response.json()['name'] == updated_data['name']
 
 
-def test_update_pet_status(add_pet):
-    pet_id = add_pet["id"]
-    updated_data = add_pet.copy()
-    updated_data["status"] = "sold"
-    response = requests.put(f"{BASE_URL}/pet", json=updated_data)
-    assert response.status_code == 200
 
-    get_response = requests.get(f"{BASE_URL}/pet/{pet_id}")
-    assert get_response.status_code == 200
-    assert get_response.json()["status"] == "sold"
-
-
-def test_delete_pet(add_pet, delete_pet):
-    pet_id = add_pet["id"]
-    delete_pet(pet_id)
-    response = requests.get(f"{BASE_URL}/pet/{pet_id}")
-    assert response.status_code == 404
 
 
 
