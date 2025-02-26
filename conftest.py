@@ -15,7 +15,7 @@ def delete_pet():
 
 
 @pytest.fixture(autouse= True)
-def create_test_pet(delete_pet):
+def create_test_pet(delete_pet): # вот тут с добавлением фикстуры удаления - работает, без нее - не работает. Животное остается на сервере
     response = requests.post(f"{BASE_URL}/pet", json= const.data)
     assert response.status_code in [200, 404], f"Failed to create pet: {response.text}"
     return response.status_code

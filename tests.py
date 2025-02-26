@@ -11,8 +11,8 @@ def test_add_pet(delete_pet):
     assert get_response.json()['id'] == const.data['id'], get_response.text
 
 
-def test_update_pet(create_test_pet, delete_pet):
 
+def test_update_pet(create_test_pet, delete_pet):
     updated_data = const.data.copy()
     updated_data["name"] = "NEWNAME"
     response = requests.put(f"{BASE_URL}/pet", json= updated_data)
