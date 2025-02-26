@@ -6,16 +6,16 @@ BASE_URL = 'https://petstore.swagger.io/v2'
 
 
 # отдельная фикстура для очистки
-@pytest.fixture(autouse= True)
+@pytest.fixture()
 def delete_pet():
-    id = const.data['id']
+    print('No')
     yield
-    response = requests.delete(f"{BASE_URL}/pet/{id}")
+    response = requests.delete(f"{BASE_URL}/pet/{const.data['id']}")
     assert response.status_code in [200, 404], f"Failed to delete pet: {response.text}"
 
 
-@pytest.fixture(autouse= True)
-def create_test_pet(delete_pet): # вот тут с добавлением фикстуры удаления - работает, без нее - не работает. Животное остается на сервере
+@pytest.fixture()
+def create_test_pet(): # вот тут с добавлением фикстуры удаления - работает, без нее - не работает. Животное остается на сервере
     response = requests.post(f"{BASE_URL}/pet", json= const.data)
     assert response.status_code in [200, 404], f"Failed to create pet: {response.text}"
     return response.status_code

@@ -7,8 +7,6 @@
     <list default="true" id="1e2f79bc-7082-463d-a374-2377249b18a9" name="Changes" comment="YEEEEEAAAAAAAAAAAH&#10;GALAXYDESSSSSTROYER">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/const.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +223,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740313477037</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="YEEEEEAAAAAAAAAAAH&#10;GALAXYDESSSSSTROYER">
+      <option name="closed" value="true" />
+      <created>1740590499129</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740590499129</updated>
+    </task>
+    <task id="LOCAL-00012" summary="YEEEEEAAAAAAAAAAAH&#10;GALAXYDESSSSSTROYER">
+      <option name="closed" value="true" />
+      <created>1740590577112</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740590577112</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

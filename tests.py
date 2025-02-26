@@ -3,6 +3,7 @@ import requests
 
 BASE_URL = 'https://petstore.swagger.io/v2'
 
+
 def test_add_pet(delete_pet):
     response = requests.post(f"{BASE_URL}/pet", json= const.data)
     assert response.status_code == 200, response.text
